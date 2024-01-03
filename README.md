@@ -1,7 +1,5 @@
 # TheTrendIsYourFriend
 
-# TheTrendIsYourFriend
-
 """
 Psuedo:
 - read in data using alpacas (5 min chart). starting with QQQ
