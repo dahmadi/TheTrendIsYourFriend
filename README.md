@@ -32,4 +32,4 @@ Key Elements of a Double Top/Bottom:
 - Valley for double top pattern, or peak for double bottom pattern.
 - Neckline break: horizontal line that is created at the respective.
 - Break of Neckline: price drop below/above horizontal neckline. Initiate trigger. 
-![alt text](https://github.com/dahmadi/TheTrendIsYourFriend/blob/main/images/Double_Top_Example.png?raw=true)
+![Double Top Example](Images/Double_Top_Example.png)
