@@ -1,4 +1,4 @@
-# TheTrendIsYourFriend
+# Double Trouble: Pattern Detector
 
 """
 Psuedo:
@@ -14,3 +14,22 @@ Psuedo:
 - comapare and contrast to buy and hold trading method. and any other methods?
 - what are the next steps? do we compare to another algo? another portfolio? compare to BRK?
 """
+
+## Objectives
+Our goal is to develop and establish an expiremental trading algorithm that identifies short and long position entries, via, trend reversal patterns within daily stock data of 'Invesco QQQ Trust Series 1 (QQQ)'. We will be identifying the two pattern's commonly referred to as double tops and double bottoms, which once identified will trigger a buy or sell signal for the algorithm. We then indend to train and test our alrorithm in various machine learning models with the intention to select and implement the most efficient machine learning model for our algorithm. 
+
+## Requirements
+
+
+
+## Pattern Identification
+Double top/bottom patterns are technical reversal patterns that form after an asset reaches a high/low price two consecutive times with a moderate decline/incline between the two high/lows.
+
+These patterns are not always easy to spot because there needs to be confirmation with break below support.
+
+Key Elements of a Double Top/Bottom:
+- Up/down-trend: price should clearly be moving in an up or down direction.
+- Valley for double top pattern, or peak for double bottom pattern.
+- Neckline break: horizontal line that is created at the respective.
+- Break of Neckline: price drop below/above horizontal neckline. Initiate trigger. 
+![alt text](https://github.com/dahmadi/TheTrendIsYourFriend/blob/main/images/Double_Top_Example.png?raw=true)
