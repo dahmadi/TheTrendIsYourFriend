@@ -58,7 +58,17 @@ The most optimized and final logistic regression model selected was: LogisticReg
 
 ### Second Model: Polynomial Regression
 
-### Third Model: 
+### Third Model: Support Vector Machine
+A Support Vector Machine (also known as SVM) is a machine learning algorithm used for classification and regression tasks. It is known for its effectiveness in finding decision boundaries that separate different classes or predictive numerical models.
+
+Final Model: 
+Accuracy: 0.8326731613317632
+Precision: 0.0
+F1: 0.0
+Recall: 0.0
+
+Reasoning behind scores: The most significant factor contributing to this is most likely a class imbalance in the data. With an SVM, especially with a linear kernel, it is very sensitive to imbalance datasets. In such cases, classifiers tend to be biased towards the majority class (class 0) and may perform poorly on the minority class (class 1) because they prioritize overall accuracy.
+
 
 
 ## Benchmark & Champion Model's
