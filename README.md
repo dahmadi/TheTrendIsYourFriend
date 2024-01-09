@@ -57,6 +57,17 @@ The most optimized and final logistic regression model selected was: LogisticReg
 
 
 ### Second Model: Polynomial Regression
+A form of regression analysis where the relationship between our independent (X_train, X_test) and dependent variables (y_train, y_test) are modelled as nth degree polynomials in x. Though the polynomial regression fits a nonlinear model to the data, it is statistically a linear problem. This is addressed through fitting linearly to every x at the corresponding y.
+
+Testing through various model parameter combinations and with only a 2nd degree polynomial to avoid overfitting.
+
+- Accuracy: 99.69% → Important, but feels as if the model may be over fitting
+- Precision: 87.65% → Identifies target class fairly well. This feels in line and not over fitting
+- Recall: 47.65% → Potential high number of false negatives.
+- F1 Score: 61.74% → Approaching the 70% score that is considered “good”.
+
+The model was trained and tested with all targets being assumed to be one (1) - this is independent of a long or short position (double bottom or double top). This is done assuming that the user will have some experience day trading and will use the model to assist with trade conviction and identification.
+
 
 ### Third Model: Support Vector Machine
 A Support Vector Machine (also known as SVM) is a machine learning algorithm used for classification and regression tasks. It is known for its effectiveness in finding decision boundaries that separate different classes or predictive numerical models.
@@ -83,3 +94,17 @@ After compiling each of our final three models from the testing results, we dete
  - Recall: 0.8551724137931035
  - F1 Score: 0.8322147651006712 
  - Confusion Matrix: True Positive = 126; False Negative = 21; False Positive = 29; True Negative = 124.
+
+## Experiment Conditionals
+1. Five (5) minute stock market data was used and days grouped together for training and testing purposes. Day trading common practices are to utilize the 5 min data in order to identify patterns and trends. Day traders also typically treat and apply single day trading vs multi day positions slightly differently as risk involves adjust with overnight holding.
+2. Post COVID market conditions. We are of the thought that COVID and events folling influenced the retail trader and made available information and data that was not necessariliy utilized by all. Also from personal experience.
+3. Used two (2) to three (3) years of data in our analysis.
+4. Reviewed only the QQQ security (reflects tech heavy Nasdaq). We believe that the volatility within this index allows for more frequent trend reversals and potential profits. This is not without it's own inherent risk.
+5. Target audience: Day Traders. The concept behind this experiment would have the model actively monitor live data in the within script of trading platforms (e.g. Think or Swim (TOS)). As a pattern is predicted and identified by the signal would be identified on the chart and the user can choose to take the trade or not, user personal variables. At this point the user would have full control of the way they manage the trade. Complete automation was considered and can still be implemented with further investigation and coding, but there is some concern of liability and complete release of personal funds.
+
+## What's Next?
+1. Do we keep only to one security or test amongst others? Double tops and bottoms present themselves in almost all tradeable assets, and the definition of a double top does not change.
+2. Do we automate even more? please reference "Experiment Conditionals?" part 5.
+3. Do we review a larger data set? Additional time frames?
+4. How to implement this on an active paper trading account?
+5. Work to implement additional patterns within this model? Or independent new models for other patterns?
